@@ -1,8 +1,10 @@
 package com.suitelaunch;
 
+import com.driver.WebDriverContainer;
 import com.gmail.actions.LoginAction;
 import com.gmail.actions.NavigateAction;
 import com.google.inject.Inject;
+import org.junit.gen5.api.AfterAll;
 import org.junit.jupiter.api.Test;
 
 public class MyTest {
@@ -20,6 +22,10 @@ public class MyTest {
     public void testSmth() {
         navigateAction.navigateToBaseUrl();
         loginAction.typeEmail();
-        loginAction.typePassword();
+    }
+
+    @AfterAll
+    public void tearDown() {
+        WebDriverContainer.getDriver().close();
     }
 }

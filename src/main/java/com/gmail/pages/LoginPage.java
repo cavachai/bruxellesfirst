@@ -1,13 +1,9 @@
 package com.gmail.pages;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class LoginPage {
-
-    public LoginPage(WebDriver driver) {
-    }
+public class LoginPage extends AbstractPage {
 
     @FindBy(xpath = "//input[@name = 'email']")
     private WebElement emailInput;
