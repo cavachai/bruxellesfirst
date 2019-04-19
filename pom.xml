@@ -6,7 +6,11 @@
 
     <groupId>be.brusselsairport.auto</groupId>
     <artifactId>bruair</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>test_module</module>
+    </modules>
 
     <dependencies>
         <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
