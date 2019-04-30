@@ -1,16 +1,11 @@
 package com.gmail.actions;
 
-import com.google.inject.Inject;
+import com.driver.WebDriverContainer;
 import org.openqa.selenium.WebDriver;
 
 public class NavigateAction {
 
-    private WebDriver driver;
-
-    @Inject
-    public NavigateAction(WebDriver driver) {
-        this.driver = driver;
-    }
+    private WebDriver driver = WebDriverContainer.getDriver();
 
     public void navigateToBaseUrl() {
         driver.get("https://mail.google.com/");
