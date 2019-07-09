@@ -31,3 +31,4 @@ target/
 mydir/*
 /blabla/
 /blabla/*.java
+my.java
